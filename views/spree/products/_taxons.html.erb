@@ -6,7 +6,7 @@
         <% product = taxon.products.last %>
         <div>
           <%= link_to seo_url(taxon), class: '' do %>
-            <%= image_tag(product.images.last.attachment.url(:large), class:'img-responsive center-block') %>
+            <%= image_tag(main_app.url_for(product.images.last.url(:large)), class:'img-responsive center-block') %>
           <% end %>
         </div>
         <p class="text-center mt10">
